@@ -1,11 +1,11 @@
-NAME = Account
+NAME = Bureaucrat
 
 
 CXX = c++
 CXXFLAGS = -std=c++98 -Wall -Wextra -Werror -MMD -MP
 CPPFLAGS = -Iincludes
 
-SRCS = tests.cpp Account.cpp
+SRCS = main.cpp Bureaucrat.cpp AForm.cpp PresidentialPardonForm.cpp RobotomyRequestForm.cpp ShrubberyCreationForm.cpp Intern.cpp
 VPATH = srcs
 
 OBJSDIR = objs
@@ -17,7 +17,7 @@ all: $(NAME)
 -include $(DEPENDS)
 
 $(NAME): $(OBJSDIR) $(OBJS)
-	$(CXX) -o $(NAME) $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 
 $(OBJSDIR)/%.o: %.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -o $@ -c $<

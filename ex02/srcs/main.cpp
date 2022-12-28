@@ -6,7 +6,7 @@
 /*   By: nfukuma <nfukuma@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 10:06:51 by nfukuma           #+#    #+#             */
-/*   Updated: 2022/12/28 23:36:07 by nfukuma          ###   ########.fr       */
+/*   Updated: 2022/12/29 00:20:42 by nfukuma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include "ShrubberyCreationForm.hpp"
 #include <iostream>
 
-int	main(void)
+int	main()
 {
 	try
 	{
@@ -53,5 +53,4 @@ int	main(void)
 	{
 		std::cout << e.what() << std::endl;
 	}
-	return (EXIT_SUCCESS);
 }

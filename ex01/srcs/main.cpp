@@ -6,7 +6,7 @@
 /*   By: nfukuma <nfukuma@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 10:06:51 by nfukuma           #+#    #+#             */
-/*   Updated: 2022/12/28 13:44:25 by nfukuma          ###   ########.fr       */
+/*   Updated: 2022/12/29 00:06:38 by nfukuma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,4 @@ int	main(void)
 	{
 		std::cout << e.what() << std::endl;
 	}
-	return (EXIT_SUCCESS);
 }
