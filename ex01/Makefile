@@ -5,7 +5,7 @@ CXX = c++
 CXXFLAGS = -std=c++98 -Wall -Wextra -Werror -MMD -MP
 CPPFLAGS = -Iincludes
 
-SRCS = main.cpp Bureaucrat.cpp
+SRCS = main.cpp Bureaucrat.cpp  Form.cpp
 VPATH = srcs
 
 OBJSDIR = objs
