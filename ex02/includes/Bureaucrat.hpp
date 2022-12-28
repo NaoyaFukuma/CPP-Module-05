@@ -6,17 +6,17 @@
 /*   By: nfukuma <nfukuma@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 10:04:56 by nfukuma           #+#    #+#             */
-/*   Updated: 2022/12/28 13:14:24 by nfukuma          ###   ########.fr       */
+/*   Updated: 2022/12/28 23:34:12 by nfukuma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef BUREAUCRAT_HPP
 # define BUREAUCRAT_HPP
 
-# include "Form.hpp"
-# include <iostream>
+# include "AForm.hpp"
+# include <string>
 
-class	Form;
+class	AForm;
 
 class Bureaucrat
 {
@@ -35,11 +35,13 @@ class Bureaucrat
 
 	std::string getName() const;
 	int getGrade() const;
+	void setGrade(int grade);
 
 	void incrementGrade();
 	void decrementGrade();
 
-	void signForm(Form &form);
+	void signForm(AForm &form);
+	void executeForm(const AForm &form) const;
 	/* ---------------- Exception Classes ---------------- */
 	class GradeTooHighException : public std::exception
 	{
