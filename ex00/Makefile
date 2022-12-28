@@ -1,11 +1,11 @@
-NAME = Account
+NAME = Bureaucrat
 
 
 CXX = c++
 CXXFLAGS = -std=c++98 -Wall -Wextra -Werror -MMD -MP
 CPPFLAGS = -Iincludes
 
-SRCS = tests.cpp Account.cpp
+SRCS = main.cpp Bureaucrat.cpp
 VPATH = srcs
 
 OBJSDIR = objs
