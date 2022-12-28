@@ -6,7 +6,7 @@
 /*   By: nfukuma <nfukuma@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 13:07:03 by nfukuma           #+#    #+#             */
-/*   Updated: 2022/12/28 13:11:59 by nfukuma          ###   ########.fr       */
+/*   Updated: 2022/12/28 22:00:56 by nfukuma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ class Form
 
   public:
 	Form(const std::string &name, int gradeToSign);
-	Form(const std::string &name, int gradeToSign, int gradeToExecute);
 	Form(const Form &src);
 	~Form();
 
