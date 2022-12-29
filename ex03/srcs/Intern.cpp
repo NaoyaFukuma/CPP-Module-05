@@ -6,7 +6,7 @@
 /*   By: nfukuma <nfukuma@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 23:42:33 by nfukuma           #+#    #+#             */
-/*   Updated: 2022/12/29 00:38:54 by nfukuma          ###   ########.fr       */
+/*   Updated: 2022/12/29 12:02:28 by nfukuma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,5 @@ AForm *Intern::makeForm(std::string name, std::string target)
 		std::cerr << ba.what() << '\n';
 		std::exit(EXIT_FAILURE);
 	}
-
-
 	return (res);
 }
